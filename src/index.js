@@ -1,9 +1,14 @@
 import React, {Component} from 'react'
+import { BlockerAlert } from './components/BlockerAlert';
+import { BlockerDetector } from './components/BlockerDetector';
 
+export { BlockerAlert, BlockerDetector }
 export default class extends Component {
   render() {
-    return <div>
-      <h2>Welcome to React components</h2>
-    </div>
+    return (
+      <BlockerAlert>
+        {this.props.children}
+      </BlockerAlert>
+    );
   }
 }

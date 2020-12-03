@@ -1,16 +1,41 @@
-# blocker-detector
+## Description
+Detect and display alert when ad block is enabled on a page
 
-[![Travis][build-badge]][build]
-[![npm package][npm-badge]][npm]
-[![Coveralls][coveralls-badge]][coveralls]
+## Install
 
-Describe blocker-detector here.
+```bash
+npm install blocker-detector
+```
 
-[build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
-[build]: https://travis-ci.org/user/repo
+```bash
+yarn add blocker-detector
+```
 
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/npm-package
+## Usage
+* You can get blocking status
+```jsx
+import { BlockerDetector } from 'blocker-detector';
 
-[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo
+const App = () => {
+  let blocked = BlockerDetector();
+
+  return (
+    <>
+      {blocked &&
+        <span>Display when ad block has been detected</span>
+      }
+    </>
+  );
+};
+```
+* You can simple display alert
+
+```jsx
+import { BlockerAlert } from 'blocker-detector';
+
+const App = () => (
+  <BlockerAlert>
+    <span>Display when ad block has been detected</span>
+  </BlockerAlert>
+);
+```
