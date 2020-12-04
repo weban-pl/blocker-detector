@@ -1,6 +1,6 @@
 {
   "name": "blocker-detector",
-  "version": "1.0.25",
+  "version": "1.1.0",
   "description": "Adblock and Ublock detector",
   "repository": "git@github.com:weban/blocker-detector.git",
   "author": "weban",
