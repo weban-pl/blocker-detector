@@ -7,7 +7,9 @@ export default class Demo extends Component {
   render() {
     return <div>
       <h1>blocker-detector Demo</h1>
-      <Example/>
+      <Example>
+        Oh no! Please turn off adblock!!
+      </Example>
     </div>
   }
 }
