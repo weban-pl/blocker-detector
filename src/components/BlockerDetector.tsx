@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
-export const BlockerDetector = () => {
-  const [block, setBlock] = useState(false);
+export const BlockerDetector = ():boolean => {
+  const [block, setBlock] = useState<boolean>(false);
 
   useEffect(() => {
     let testAd = document.createElement('div');
